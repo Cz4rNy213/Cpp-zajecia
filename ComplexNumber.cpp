@@ -1,4 +1,4 @@
-#include "zajecia2.h"
+#include "ComplexNumber.h"
 #include <iostream>
 
 ComplexNumber::ComplexNumber() : re_(0.), im_(0.){}
@@ -84,4 +84,3 @@ void ComplexNumber::im(double i){
 double ComplexNumber::im()const{
     return im_;
 }
-

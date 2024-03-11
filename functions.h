@@ -1,5 +1,5 @@
 #pragma once
-#include "zajecia2.h"
+#include "ComplexNumber.h"
 #include <iostream>
 
 ComplexNumber operator+(const double& v, const ComplexNumber& cn);

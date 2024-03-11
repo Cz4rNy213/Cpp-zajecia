@@ -1,5 +1,5 @@
 #include <iostream>
-#include "zajecia2.h"
+#include "ComplexNumber.h"
 #include "functions.h"
 
 int main(){

@@ -37,11 +37,11 @@ public:
 
     Vector operator-(const Vector& v2)const;
 
-    void operator-=(const Vector& v2);
+    Vector& operator-=(const Vector& v2);
 
-    void operator+=(const Vector& v2);
+    Vector& operator+=(const Vector& v2);
 
-    void operator*=(const double& v);
+    Vector& operator*=(const double& v);
 
     bool operator==(const Vector& v2)const;
 

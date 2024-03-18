@@ -67,16 +67,19 @@ Vector Vector::operator-()const{
     return {-x_, -y_ };
 }
 
-void Vector::operator-=(const Vector& v2){
-    this->minusV(v2);
+Vector& Vector::operator-=(const Vector& v2){
+    *this = *this - v2;
+    return *this;
 }
 
-void Vector::operator+=(const Vector& v2){
-    this->addV(v2);
+Vector& Vector::operator+=(const Vector& v2){
+    *this = *this + v2;
+    return *this;
 }
 
-void Vector::operator*=(const double& v){
-    this->multiplyV(v);
+Vector& Vector::operator*=(const double& v){
+    *this = *this * v;
+    return *this;
 }
 
 bool Vector::operator==(const Vector& v2)const{

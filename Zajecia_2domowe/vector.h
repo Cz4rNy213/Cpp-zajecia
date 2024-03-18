@@ -9,6 +9,7 @@ private:
 
 public:
     Vector();
+    Vector(const Vector&);
     Vector(double x, double y);
 
     Vector multiply(const double& v)const;

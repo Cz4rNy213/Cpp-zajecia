@@ -23,6 +23,9 @@ int main()
         Vector::compEpsilon(0.01);
         std::cout << "v3 == v4: " << std::boolalpha << (v3 == v4) << std::endl;
         std::cout << "v3 != v4: " << std::boolalpha << (v3 != v4) << std::endl;
+
+        Vector v5(v1);
+        std::cout<<"";
     }
  
     return 0;

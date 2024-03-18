@@ -6,6 +6,8 @@ double Vector::prec_;
 
 Vector::Vector() : x_(0.), y_(0.){}
 
+Vector::Vector(const Vector& v) = default;
+
 Vector::Vector(double x, double y) : x_(x), y_(y){}
 
 Vector Vector::multiply(const double& v)const{
@@ -83,13 +85,11 @@ Vector& Vector::operator*=(const double& v){
 }
 
 bool Vector::operator==(const Vector& v2)const{
-    Vector res = this->minus(v2);
-    return (res.length() <= prec_);
+    return (abs(this->minus(v2).x_) <= prec_ && abs(this->minus(v2).y_) <= prec_);
 }
 
 bool Vector::operator!=(const Vector& v2)const{
-    Vector res = this->minus(v2);
-    return !(res.length() <= prec_);
+    return !(abs(this->minus(v2).x_) <= prec_ && abs(this->minus(v2).y_) <= prec_);
 }
 
 void Vector::compEpsilon(double v){

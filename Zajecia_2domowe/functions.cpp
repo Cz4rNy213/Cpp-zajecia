@@ -8,3 +8,7 @@ std::ostream& operator<<(std::ostream& stream, const Vector& v1){
 Vector multiply(const double& v, const Vector& v1){
     return (v1.multiply(v));
 }
+
+Vector operator*(const double& v, const Vector& v1){
+    return (v1.multiply(v));
+}

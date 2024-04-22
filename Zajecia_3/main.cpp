@@ -21,7 +21,10 @@ int main()
  
         da1 = da4 = da3;
         da1[1u] = 11.;
- 
+        DynamArray arr1(5);  
+        DynamArray arr2(3);  
+
+        arr1 = std::move(arr2); 
         std::cout << "da1[0]: " << da1[0u] << std::endl;
         std::cout << "da2[0]: " << da2[0u] << std::endl;
         std::cout << "da3[0]: " << da3[0u] << std::endl;

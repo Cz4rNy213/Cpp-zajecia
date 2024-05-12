@@ -37,7 +37,6 @@ int main()
         std::cout<<square<<std::endl;
         std::cout<<rectangle<<std::endl;
         std::cout<<r<<std::endl;
-    
     }
  
     return 0;

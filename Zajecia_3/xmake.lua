@@ -8,7 +8,7 @@ target("Zajecia_3")
 target("main")
     set_kind("binary")
     add_files("main.cpp")
-
+    set_languages("c++17")
     add_deps("Zajecia_3")
 
 --

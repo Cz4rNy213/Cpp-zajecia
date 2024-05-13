@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <SFML
 namespace NS{
     class A{
         int value;
